@@ -230,12 +230,12 @@ img {
 
 .home__blob {
   fill: var(--first-color); /* Blue color */
-  animation: blobAnimation 8s linear infinite alternate;
+  animation: blobAnimation 5s linear infinite alternate;
 }
 
 .home__blob-back {
   fill: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
-  animation: blobAnimation 8s linear infinite alternate-reverse;
+  animation: blobAnimation 5s linear infinite alternate-reverse;
 }
 
 @keyframes blobAnimation {
