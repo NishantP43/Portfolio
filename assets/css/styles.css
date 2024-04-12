@@ -220,6 +220,33 @@ img {
 .home__blob-img {
   width: 360px;
 }
+.home__blob,
+.home__blob-back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.home__blob {
+  fill: var(--first-color); /* Blue color */
+  animation: blobAnimation 8s linear infinite alternate;
+}
+
+.home__blob-back {
+  fill: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+  animation: blobAnimation 8s linear infinite alternate-reverse;
+}
+
+@keyframes blobAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-10px) scale(1.1);
+  }
+}
+
 
 
 .button {
@@ -312,7 +339,7 @@ img {
 .work__container {
   row-gap: 2rem;
 }
-.work__img {
+.work__im {
   box-shadow: 0px 4px 25px rgba(115, 0, 255, 0.518);
   border-radius: 0.5rem;
   overflow: hidden;
