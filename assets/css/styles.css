@@ -158,8 +158,8 @@ img {
 }
 .nav__logo {
   color: var(--second-color);
-  font:200px;
-  
+  font-size: 40px;
+
 }
 .nav__toggle {
   color: var(--second-color);
@@ -188,6 +188,7 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  font-size: medium;
 }
 .home__data {
   align-self: center;
