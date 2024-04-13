@@ -366,7 +366,7 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
-  color: var(--text-color); /* Text color set to white */
+  color: #555;
 }
 .contact__button {
   display: block;
