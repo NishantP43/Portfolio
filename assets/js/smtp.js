@@ -1,7 +1,7 @@
 const form = document.querySelector("form");
 function sendEmail() {
         Email.send({
-        Host: "smtp.gmail.com",
+        Host: "smtp.elasticmail.com",
         Username: "nishantp920@gmail.com",
         Password: "4ED7A5A9BB2FE84FE8C616395B4A9EDF59BE2",
         To: 'nishantp920@gmail.com',
@@ -11,6 +11,7 @@ function sendEmail() {
     }).then(
         message => alert(message)
     );
+    
 }
 
 function resetForm() {
