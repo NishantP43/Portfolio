@@ -1,23 +1,41 @@
-const form = document.querySelector("form");
-function sendEmail() {
-        Email.send({
-        Host: "smtp.elasticmail.com",
-        Username: "nishantp920@gmail.com",
-        Password: "4ED7A5A9BB2FE84FE8C616395B4A9EDF59BE2",
-        To: 'nishantp920@gmail.com',
-        From: 'nishantp920@gmail.com',
-        Subject: "This is Something",
-        Body: "And this is the body"
-    }).then(
-        message => alert(message)
-    );
-    
-}
 
-function resetForm() {
-    document.querySelector(".contact__form").reset();
-}
-form.addEventListener("submit",(e) => {
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+    const formData = new FormData(form);
     e.preventDefault();
-    sendEmail();
-})
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
