@@ -8,7 +8,7 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: #000; 
   --text-color: #fff; 
-  /*===== Fuente y tipografia =====*/
+
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
@@ -112,7 +112,7 @@ img {
   background: linear-gradient(135deg, rgba(0, 98, 245, 0.689), rgba(254, 85, 201, 0.615),rgba(240, 106, 34, 0.678));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 1px 4px rgba(195, 199, 202, 0.869);
+  box-shadow: 0 1px 4px rgba(195, 199, 202, 0.816);
   border-radius: 30px; 
 }
 
@@ -303,7 +303,7 @@ img {
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(229, 255, 0, 0.199);
+  box-shadow: 0px 4px 25px rgba(219, 219, 218, 0.222);
 
 }
 .skills__icon {
