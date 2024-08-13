@@ -1,0 +1,17 @@
+<!--===== CONTACT =====-
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+            
+                <div class="contact__container bd-grid">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                        <input type="hidden" name="access_key" value="b2805567-71b3-45ac-b9fb-489dad7b4bf2">
+                        <input type="text" name="name" placeholder="Name" class="contact__input">
+                        <input type="email" name="email" placeholder="Email" class="contact__input">
+                        <textarea name="message" cols="30" rows="10" class="contact__input" placeholder="Enter your message here"></textarea>
+                        <button type="submit" class="contact__button button">SUBMIT</button>
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+        <script> src="assets/js/resetForm.js"</script> -->
