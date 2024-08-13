@@ -109,7 +109,7 @@ img {
   left: 10px;
  
   z-index: var(--z-fixed);
-  background: linear-gradient(135deg, #fe3dc6, rgba(220, 172, 205, 0.615),#fc9995);
+  background: linear-gradient(135deg, #000dff, rgba(0, 55, 255, 0.615),#001eff);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 1px 4px rgba(195, 199, 202, 0.816);
